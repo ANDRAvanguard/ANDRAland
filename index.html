@@ -41,7 +41,7 @@
         margin-bottom: 40px;
     }
 
-    /* TASTO PAGA (rimane invariato) */
+    /* TASTO PAGA (in alto, invariato nello stile) */
     .btn-pay {
         display: block;
         width: 80%;
@@ -88,8 +88,16 @@
     }
 
     .btn-icon img {
-        width: 22px;
-        height: 22px;
+        width: 26px;
+        height: 26px;
+        display: block;
+    }
+
+    /* Logo Telegram: maschera tonda per togliere i bordi bianchi */
+    .icon-telegram {
+        border-radius: 50%;
+        filter: drop-shadow(0 0 4px rgba(0, 150, 255, 0.6))
+                drop-shadow(0 0 8px rgba(0, 150, 255, 0.3));
     }
 
     .qr-section {
@@ -120,12 +128,12 @@
     <h1>ANDRAland Social Club</h1>
     <p class="subtitle">Il portale umano‑AI dove arte, mente e tecnologia si incontrano.</p>
 
-    <!-- TASTO PAGA (ORA SOPRA) -->
+    <!-- TASTO PAGA SOPRA I SOCIAL -->
     <a class="btn-pay" href="payment.html">Paga con PayPal / Stripe</a>
 
-    <!-- PULSANTI SOCIAL CON ICONA -->
+    <!-- PULSANTI SOCIAL CON ICONE -->
     <a class="btn-icon" href="https://t.me/ANDRAland" target="_blank">
-        <img src="assets/telegram.png" alt="Telegram">
+        <img src="assets/t_logo.png" class="icon-telegram" alt="Telegram">
         Telegram Ufficiale
     </a>
 
