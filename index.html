@@ -22,9 +22,9 @@
     }
 
     .logo {
-        width: 320px; /* leggermente più grande per il nuovo formato */
+        width: 320px;
         margin: 0 auto 40px;
-        filter: drop-shadow(0 0 12px #D4AF37); /* glow dorato elegante */
+        filter: drop-shadow(0 0 12px #D4AF37);
     }
 
     h1 {
@@ -41,24 +41,55 @@
         margin-bottom: 40px;
     }
 
-    .btn {
+    /* TASTO PAGA (rimane invariato) */
+    .btn-pay {
         display: block;
         width: 80%;
         max-width: 350px;
-        margin: 15px auto;
+        margin: 25px auto 40px;
         padding: 14px 20px;
         background: linear-gradient(90deg, #D4AF37, #b68b2e);
         color: #0A0A0A;
         text-decoration: none;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         border-radius: 40px;
         font-weight: bold;
         transition: 0.2s;
     }
 
-    .btn:hover {
+    .btn-pay:hover {
         transform: scale(1.05);
         background: linear-gradient(90deg, #e8c45a, #d4af37);
+    }
+
+    /* PULSANTI SOCIAL CON ICONA */
+    .btn-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        width: 80%;
+        max-width: 350px;
+        margin: 12px auto;
+        padding: 12px 20px;
+        background: #1A1A1A;
+        border: 1px solid #333;
+        color: #F8F8F0;
+        text-decoration: none;
+        font-size: 1.1rem;
+        border-radius: 40px;
+        font-weight: 500;
+        transition: 0.2s;
+    }
+
+    .btn-icon:hover {
+        transform: scale(1.05);
+        background: #222;
+    }
+
+    .btn-icon img {
+        width: 22px;
+        height: 22px;
     }
 
     .qr-section {
@@ -89,13 +120,24 @@
     <h1>ANDRAland Social Club</h1>
     <p class="subtitle">Il portale umano‑AI dove arte, mente e tecnologia si incontrano.</p>
 
-    <!-- PULSANTI SOCIAL -->
-    <a class="btn" href="https://t.me/ANDRAland" target="_blank">Telegram Ufficiale</a>
-    <a class="btn" href="https://www.instagram.com/andralandsocialclub" target="_blank">Instagram Social Club</a>
-    <a class="btn" href="#" target="_blank">TikTok (in arrivo)</a>
+    <!-- TASTO PAGA (ORA SOPRA) -->
+    <a class="btn-pay" href="payment.html">Paga con PayPal / Stripe</a>
 
-    <!-- PAGAMENTO -->
-    <a class="btn" href="payment.html">Paga con PayPal / Stripe</a>
+    <!-- PULSANTI SOCIAL CON ICONA -->
+    <a class="btn-icon" href="https://t.me/ANDRAland" target="_blank">
+        <img src="assets/telegram.png" alt="Telegram">
+        Telegram Ufficiale
+    </a>
+
+    <a class="btn-icon" href="https://www.instagram.com/andralandsocialclub" target="_blank">
+        <img src="assets/instagram.png" alt="Instagram">
+        Instagram Social Club
+    </a>
+
+    <a class="btn-icon" href="#" target="_blank">
+        <img src="assets/tiktok.png" alt="TikTok">
+        TikTok (in arrivo)
+    </a>
 
     <!-- QR SECTION -->
     <div class="qr-section">
@@ -116,4 +158,3 @@
 
 </body>
 </html>
-
